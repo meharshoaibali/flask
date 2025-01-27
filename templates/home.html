@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>MLT Jobs</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">MLT Jobs</h1>
+    
+    <!-- Image Section -->
+    <div class="text-center mb-4">
+      <img src="static/job.jpg" alt="MLT Jobs" class="img-fluid rounded shadow" style="max-height: 500px; width: 100%;">
+    </div>
+    
+    <!-- About Section -->
+    <section class="mb-5 text-center">
+      <h2>About MLT Jobs</h2>
+      <p class="lead">
+        Mobile app development is an energetic and rewarding field, offering numerous possibilities for innovation and growth. By understanding the development process, choosing the right platform, and staying updated with industry trends, aspiring developers can create successful mobile applications that cater to users' evolving needs.
+        Whether you are a business owner looking to develop an app or an individual aspiring to become a mobile app developer, this guide provides a comprehensive overview to help you get started on your journey.
+      </p>
+    </section>
+    
+    <!-- Job Opening Section -->
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Job Opening</h2>
+      <div class="container">
+        <div class="row">
+          {% for job in jobs %}
+            {% include 'job.html' %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- Action Buttons Section -->
+    <div class="text-center">
+      <a href="#" class="btn btn-success btn-lg">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS & Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybEpa4jTt2T2v3LrFf8BbZm6i+eEL70Rh4jIiMOAMwIv3VQrF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0J6p9HqJzZF4l1fQKXYtMyi+aFJJiJ8+2bA7cFZcX9Sv0F0D" crossorigin="anonymous"></script>
+</body>
+</html>
